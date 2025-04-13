@@ -1,0 +1,83 @@
+<!Doctypehtml>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width initial-scale=1.0">
+        <title>Webpage create a card</title>
+        <link rel="stylesheet" href="myprotfoliotest-3.css">
+    </head>
+    <body>
+      
+        <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\HTML.jpeg" alt="Product Image">
+            <h2>HTML</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('HTML')" class="buy-btn">Buy Now</button>
+                      </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\CSS.jpeg" alt="Product Image">
+            <h2>CSS</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('CSS')" class="buy-btn">Buy Now</button>          
+            </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Javascript.jpeg" alt="Product Image">
+            <h2>JavaScript</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('Javascript')" class="buy-btn">Buy Now</button></a>
+          </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\React js.jpeg" alt="Product Image">
+            <h2>React Js</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('React js')" class="buy-btn">Buy Now</button> </a>       
+              </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Core Java Cards.jpg" alt="Product Image">
+            <h2>Core Java</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('Core Java')" class="buy-btn">Buy Now</button>  </a>     
+               </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Advance Java.jpeg" alt="Product Image">
+            <h2>Advance Java</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('Advance Java')" class="buy-btn">Buy Now</button> </a>       
+              </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Selinium.jpeg" alt="Product Image">
+            <h2>Selinium</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('Selinium')" class="buy-btn">Buy Now</button>   </a>     
+              </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Sql.jpeg" alt="Product Image">
+            <h2>SQL</h2>
+            <p class="price">$199.99</p>
+            <a href="myprotfoliotest-4.html">
+              <button onclick="goToPayment('SQL')" class="buy-btn">Buy Now</button> </a>        
+             </div>
+          <div class="course-card">
+            <img src="C:\Users\Priya Bethamcherla\Downloads\Full stack developer.jpeg" alt="Product Image">
+            <h2>Full Stack</h2>
+            <p class="price">$199.99</p>
+           <!-- Card Button -->
+           <a href="myprotfoliotest-4.html">
+            <button onclick="goToPayment('FullStack')" class="buy-btn">Buy Now</button>
+      
+           </div></a></div>
+    </body>    
+
+<script>
+  function goToPayment(courseName) {
+    window.location.href = `payment.html?course=${encodeURIComponent(courseName)}`;
+  }
+</script>
+</html>
