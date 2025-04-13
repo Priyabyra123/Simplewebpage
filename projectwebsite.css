@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: #00bcd4;
+      margin-bottom: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .flex-container img {
+      width: 500px;
+      border-radius: 10px;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    .content h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .content ul {
+      padding-left: 20px;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section-title">Real-Time Projects</div>
+
+  <div class="flex-container">
+    <img src="C:\Users\Priya Bethamcherla\Downloads\realtimeproject.jpg" alt="Real-Time Projects">
+
+    <div class="content">
+      <h3>Learn by Doing: Real-World Projects for Practical Mastery</h3>
+      <p>
+        At our cutting-edge software training institute, we specialize in offering <span class="highlight">real-time projects</span> that immerse learners in the dynamic world of <span class="highlight">IT technologies</span>. Our <span class="highlight">courses</span> are designed to mirror real-world scenarios encountered in the IT industry, ensuring a <span class="highlight">practical</span> and <span class="highlight">hands-on</span> learning experience. The software courses we provide are carefully crafted to equip learners with the skills demanded by the ever-evolving industry.
+      </p>
+
+      <p>
+        In addition to theoretical knowledge, our institute emphasizes <span class="highlight">hands-on projects</span>, allowing students to apply what they've learned in a tangible, real-world context. Our state-of-the-art lab facility provides the perfect environment for learners to experiment and hone their skills. As part of our commitment to your success, we offer dedicated mentor support, guiding you through the challenges of real-world problems encountered in the IT industry.
+      </p>
+
+      <h3>Key Features of Our Software Training Institute:</h3>
+      <ul>
+        <li>Real-time projects provide practical exposure to IT technologies.</li>
+        <li>Courses are structured around real-world scenarios prevalent in the IT industry.</li>
+        <li>Comprehensive software courses address the latest industry demands.</li>
+        <li>Hands-on projects enable the application of theoretical knowledge.</li>
+        <li>State-of-the-art lab facility for practical experimentation.</li>
+        <li>Mentor support to navigate and overcome real-world challenges in the IT domain.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

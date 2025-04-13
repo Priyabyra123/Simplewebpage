@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 2px;
+    margin:100px;
+    gap:20px;
+    max-width: 1200px;
+    
+  }
+  
+  .course-card {
+    
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 260px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  
+  }
+  
+  .course-card img {
+    width: 100%;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+  
+  .course-card h2 {
+    margin: 15px 0 10px;
+  }
+  
+  .course-card .price {
+    color: #009688;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .course-card button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .course-card button:hover {
+    background-color: #00796b;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+  }
+  #paymentSection {
+    background-color: rgb(203, 27, 27);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 45%; /* 2 in a row for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* 1 in a row for phones */
+    }
+  }
+  

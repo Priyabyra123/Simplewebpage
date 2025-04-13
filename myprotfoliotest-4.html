@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .section {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .pay-btn {
+      background-color: orange;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="courseName">Processing...</h2>
+
+  <div class="section">
+    <h3>Pay via UPI</h3>
+    <label><input type="radio" name="upi" checked> Google Pay</label><br>
+    <label><input type="radio" name="upi"> PhonePe</label><br>
+    <label><input type="radio" name="upi"> Add new UPI ID</label><br><br>
+    <button class="pay-btn" onclick="payNow()">Pay ₹199.99</button>
+  </div>
+
+  <div class="section">
+    <h3>Pay via Card</h3>
+    <input type="text" placeholder="Card Number"><br><br>
+    <input type="text" placeholder="Name on Card"><br><br>
+    <button class="pay-btn">Pay with Card</button>
+  </div>
+
+  <div class="section">
+    <h3>Net Banking</h3>
+    <select>
+      <option>--Select Bank--</option>
+      <option>SBI</option>
+      <option>HDFC</option>
+      <option>ICICI</option>
+    </select><br><br>
+    <button class="pay-btn">Pay with Net Banking</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const course = params.get("course");
+
+    const courseNameElement = document.getElementById("courseName");
+    courseNameElement.innerText = course ? `Payment for ${course.toUpperCase()}` : "No Course Selected";
+
+    function payNow() {
+      alert(`Redirecting to UPI payment for ${course.toUpperCase()}`);
+      // Here you could actually integrate Razorpay / PayPal, etc.
+    }
+  </script>
+</body>
+</html>
